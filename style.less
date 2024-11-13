@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #000;
+    
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.brush {
+    color: #FFF;
+
+    width: auto;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+
+    #brushColor {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+.container {
+    outline: 1px solid #FFF;
+    background: #AAA;
+    
+    /* CSS method to make text unselectable */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+
+    .pixel {
+        outline: 1px solid #0002;
+    }
+}
